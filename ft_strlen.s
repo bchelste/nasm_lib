@@ -1,13 +1,14 @@
+global _ft_strlen
+
 section .text
-    global  _ft_strlen
 
 _ft_strlen:
-        xor rax, rax
-        jmp number
+                xor rax, rax
+                jmp number
 number:
-        cmp byte[rdi + rax], 0
-        je return
-        inc rax
-        jmp number
+                cmp byte[rdi + rax], 0
+                je return
+                inc rax
+                jmp number
 return:
-        ret
+                ret
