@@ -6,13 +6,14 @@
 #    By: artempot <artempot@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/21 14:18:37 by artempot          #+#    #+#              #
-#    Updated: 2021/05/25 19:31:02 by artempot         ###   ########.fr        #
+#    Updated: 2021/05/27 17:07:31 by artempot         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= libasm.a
 
-SRCS		= ft_strlen.s
+SRCS		= ft_strlen.s \
+				ft_strcpy.s
 
 OBJS		= $(SRCS:.s=.o)
 
