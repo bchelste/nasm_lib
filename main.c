@@ -6,7 +6,7 @@
 /*   By: bchelste <bchelste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 14:28:11 by bchelste          #+#    #+#             */
-/*   Updated: 2021/05/28 18:47:43 by bchelste         ###   ########.fr       */
+/*   Updated: 2021/05/28 19:09:55 by bchelste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,6 @@ static void check_ft_strlen()
     int     i;
     int     j;
     
-    i = 0;
-    j = 0;
     printf(BLUE("check ft_strlen:\n"));
     i = strlen(empty_str);
     j = ft_strlen(empty_str);
