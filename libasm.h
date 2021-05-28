@@ -6,7 +6,7 @@
 /*   By: artempot <artempot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 15:30:41 by artempot          #+#    #+#             */
-/*   Updated: 2021/05/27 17:06:41 by artempot         ###   ########.fr       */
+/*   Updated: 2021/05/28 11:20:21 by artempot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,6 @@
 
 size_t      ft_strlen(const char *str);
 char        *ft_strcpy(char *dst, const char *src);
+int         ft_strcmp(const char *str1, const char *str2);
 
 #endif
