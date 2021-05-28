@@ -1,7 +1,7 @@
+section .text
+
 global _ft_write
 extern ___error
-
-section .text
 
 _ft_write:                                  ; rdi = fd, buf = rsi, bytes = rdx
                 mov     rax, 0x2000004

@@ -1,6 +1,6 @@
-global _ft_strcpy
-
 section .text
+
+global _ft_strcpy
                                     ; rdi => dst    rsi => src
 _ft_strcpy:
                 xor rdx, rdx

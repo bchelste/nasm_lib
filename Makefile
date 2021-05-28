@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: artempot <artempot@student.42.fr>          +#+  +:+       +#+         #
+#    By: bchelste <bchelste@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/05/21 14:18:37 by artempot          #+#    #+#              #
-#    Updated: 2021/05/28 15:27:04 by artempot         ###   ########.fr        #
+#    Created: 2021/05/21 14:18:37 by bchelste          #+#    #+#              #
+#    Updated: 2021/05/28 18:16:55 by bchelste         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,8 @@ SRCS		= ft_strlen.s \
 				ft_strcpy.s \
 				ft_strcmp.s \
 				ft_write.s \
-				ft_read.s
+				ft_read.s \
+				ft_strdup.s
 
 OBJS		= $(SRCS:.s=.o)
 

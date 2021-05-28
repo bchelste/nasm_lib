@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: artempot <artempot@student.42.fr>          +#+  +:+       +#+        */
+/*   By: bchelste <bchelste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/21 14:28:11 by artempot          #+#    #+#             */
-/*   Updated: 2021/05/28 16:09:24 by artempot         ###   ########.fr       */
+/*   Created: 2021/05/21 14:28:11 by bchelste          #+#    #+#             */
+/*   Updated: 2021/05/28 18:47:43 by bchelste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -308,13 +308,51 @@ static void check_ft_read()
     printf("-----\n\n");   
 }
 
+static void check_ft_strdup()
+{
+    char    *empty_str = "";
+    char    *long_str = "qwertyuiopasdfghjklzxcvbnm1234567890";
+    int     i;
+    char    *p;
+    char    *q;
+
+    printf(BLUE("check ft_strdup:\n"));
+    printf("|%s|\n", empty_str);
+    p = ft_strdup(empty_str);
+    q = strdup(empty_str);
+    printf("ft_strdup result: %s\n", p);
+    printf("   strdup result: %s\n", q);
+    i = strcmp(p, q);
+    if (i == 0)
+        printf(GREEN("OK\n"));
+    else
+        printf("ERROR!\n");
+    free(p);
+    free(q);
+    printf("|%s|\n", long_str);
+    p = ft_strdup(long_str);
+    q = strdup(long_str);
+    printf("ft_strdup result: %s\n", p);
+    printf("   strdup result: %s\n", q);
+    i = strcmp(p, q);
+    if (i == 0)
+        printf(GREEN("OK\n"));
+    else
+        printf("ERROR!\n");
+    free(p);
+    free(q);
+    printf("-----\n\n"); 
+}
+
 int         main()
 {
-    printf("---------\nCheck functions libasm\n----------\n");
+    printf(BLUE("---------\nCheck functions libasm\n----------\n"));
     check_ft_strlen();
     check_ft_strcpy();
     check_ft_strcmp();
     check_ft_write();
     check_ft_read();
+    check_ft_strdup();
+    printf(BLUE("---------------\nFinish_tests\n"));
     return (0);
 }

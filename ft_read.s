@@ -1,7 +1,7 @@
+section .text
+
 global _ft_read
 extern ___error
-
-section .text
 
 _ft_read:                               ; fd = rdi, buf = rsi, bytes = rdx
             mov     rax, 0x2000003
