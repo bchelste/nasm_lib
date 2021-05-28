@@ -24,16 +24,5 @@ return:
                 movzx rdx, dl
                 movzx rcx, cl
                 sub rdx, rcx
-                cmp rdx, 0
-                je  return.equal
-                jl  return.less
-                jmp return.greater
-
-.equal:         mov rax, rdx
-                ret
-
-.less:          mov rax, rdx
-                ret
-
-.greater:       mov rax, rdx
+                mov rax, rdx
                 ret
