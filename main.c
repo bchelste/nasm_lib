@@ -6,7 +6,7 @@
 /*   By: bchelste <bchelste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 14:28:11 by bchelste          #+#    #+#             */
-/*   Updated: 2021/05/28 19:09:55 by bchelste         ###   ########.fr       */
+/*   Updated: 2021/06/05 14:57:22 by bchelste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 static void check_ft_strlen()
 {
-    char    *empty_str = "";
+    char	*empty_str = "";
     char    *long_str = "qwertyuiopasdfghjklzxcvbnm1234567890_long_string";
     char    *str = "string";
     int     i;
